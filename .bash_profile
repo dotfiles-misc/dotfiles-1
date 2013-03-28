@@ -4,20 +4,12 @@ then
 	. ~/.bashrc
 fi
 
-# mpd
+# daemon and X
 if [ "$(tty)" = "/dev/tty1" ]
 then
 	start-daemon mpd
-fi
 
-# offlineimap
-if [ "$(tty)" = "/dev/tty1" ]
-then
 	start-daemon mra-guard
-fi
 
-# startx
-if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]
-then
-	startx
+	[ -z "$DISPLAY" ] && startx
 fi

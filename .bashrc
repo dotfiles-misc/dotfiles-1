@@ -1,6 +1,3 @@
-# history
-#unset HISTFILE
-
 # umask
 umask 022
 

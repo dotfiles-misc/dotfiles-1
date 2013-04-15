@@ -332,6 +332,8 @@ globalkeys = awful.util.table.join(
             naughty.notify({ title="Screenshot", text="The focused window captured" })
         end),
 
+    awful.key({ modkey, "Control" }, "m", function () awful.util.spawn("monitor-toggle") end),
+
     awful.key({}, "XF86AudioPlay", function () awful.util.spawn("mpc toggle") end),
     awful.key({}, "XF86AudioStop", function () awful.util.spawn("mpc stop") end),
     awful.key({}, "XF86AudioPrev", function () awful.util.spawn("mpc prev") end),

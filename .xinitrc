@@ -8,6 +8,9 @@ xset b off
 xset s off
 xset dpms 0 0 0
 
+# external monitor
+monitor-toggle
+
 # fcitx
 export XMODIFIERS="@im=fcitx"
 export GTK_IM_MODULE="fcitx"
